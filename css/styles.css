@@ -139,7 +139,6 @@ img {
 }
 .active {
   color: var(--pressed-state);
-  bottom: -3px;
 }
 .mail,
 .number {
