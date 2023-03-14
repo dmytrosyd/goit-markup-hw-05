@@ -421,8 +421,6 @@ img {
   fill: var(--primary-brand);
 } */
 .partnier-icon {
-  transition: background-color var(--animation-duration)
-    var(--animation-function);
   fill: currentColor;
 }
 /* footer */
@@ -578,6 +576,8 @@ img {
 }
 
 .batton-list {
+  transition: background-color var(--animation-duration)
+    var(--animation-function);
   background: var(--light);
   cursor: pointer;
   border: 1px solid var(--accent);
@@ -680,12 +680,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.row-link:hover,
-.row-link:focus {
-  content: "";
-  display: block;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.row-link:hover .overley,
+.row-link:focus .overley {
+  transform: translateY(0);
 }
