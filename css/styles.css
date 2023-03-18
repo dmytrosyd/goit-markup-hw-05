@@ -163,7 +163,6 @@ img {
 .mail:hover,
 .number:hover {
   color: var(--pressed-state);
-  transition: color var(--animation-duration) var(--animation-function);
 }
 .menu-link.active::after {
   content: "";
